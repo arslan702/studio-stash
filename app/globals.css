@@ -8,6 +8,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../public/sofiapro/Fonts/sofiapro-light.otf");
+}
+
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../public/amsi-pro/AmsiPro-Regular.otf");
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,6 +35,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  margin: 0;
+  padding: 0;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +49,51 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.homehead {
+  font-family: "Sofia Pro";
+}
+
+.amsi {
+  font-family: "Amsi Pro";
+}
+
+.home_bg {
+  background-image: url("../public/images/header_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom_bg {
+  position: relative;
+}
+
+.bottom_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000A1;
+}
+
+/* Your existing background image styles */
+.bottom_bg {
+  background-image: url("../public/images/piano.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home_bg.scrolled {
+  background-color: #000000;
+  /* Add any other styles for the scrolled state */
+}
+
+.w-full.scrolled {
+  background-color: black;
+  /* Add any other styles for the scrolled state */
 }

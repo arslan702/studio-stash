@@ -1,113 +1,109 @@
+"use client";
 import Image from "next/image";
+import smartpho from "../public/images/smartpho.png"
+import universal from "../public/images/universal.png"
+import fuga from "../public/images/fuga.png"
+import symphoni from "../public/images/symphonic.png"
+import downtown from "../public/images/downtown.png"
+import Benifits from "./components/Benefits";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/footer";
+import HeaderLogo from "../public/images/headerLogo.png";
+import Logo from "../public/images/logo.png"
+import { useEffect, useState } from "react";
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import { useRouter } from "next/navigation";
+
+const gradientStyle = {
+  background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  fontWeight: '300',
+  color: 'transparent', // Fallback color for browsers that don't support text gradients
+};
 
 export default function Home() {
+  const router = useRouter();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+    <div className={`home_bg h-[80vh] md:h-[100vh] relative pl-2 md:pl-8 lg:pl-32 ${scrolled ? 'scrolled' : ''}`}>
+    <div className={`fixed top-0 left-0 right-0 bg-${scrolled ? "[#000000]" : "transparent"} z-[1]`}>
+      <div className={`flex flex-row justify-between`}>
+        <div className="pt-3 lg:pt-6 pl-8 lg:pl-32">
+          <Image src={HeaderLogo} alt="logo" height={84} width={207} />
+        </div>
+        <div className="flex flex-row justify-between items-center pt-4 mr-32">
+          <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer">HOME</div>
+          <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer"><Link to="benefits" smooth={true} duration={500}>BENEFITS</Link></div>
+          <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer" onClick={() => router.push('/contact')}>CONTACT US</div>
+          <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer"><Link to="works">HOW IT WORK</Link></div>
+          <div className='h-[45px] w-[148px] rounded-[42px] text-[#000000] pt-[10px] cursor-pointer ml-5' onClick={() => router.push('/contact')} style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
+            <center>CONTACT</center>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex items-center justify-start pt-48 md:pt-64">
+      <div className="flex flex-col">
+        <div className="h-[3px] w-[196px]" style={{background: "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)"}}></div>
+        <div className="homehead text-[44px] md:text-[75px] leading-[44px] md:leading-[74px] text-[#ffffff] mt-5">
+          Unstash the Music
+        </div>
+        <div className="homehead text-[44px] md:text-[75px] leading-[44px] md:leading-[74px] pb-4" style={gradientStyle}>
+          Unlock the Bag
+        </div>
+        <div className="flex flex-row mt-5">
+          <div className="hidden md:block w-[11px] h-[76px]" style={{background: "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)"}}></div>
+          <div className="homehead text-[#ffffff] text-[35px] leading-[33px] w-[90%] md:w-[55%] ml-1 md:ml-5 mt-1">
+            Empowering musicians with upfront cash and transparent deals
+          </div>
+        </div>
       </div>
-    </main>
+      </div>
+    </div>
+    <div className="w-full h-[223px] flex flex-col justify-center items-center bg-[#000000]">
+      <div className="homehead text-[48px] leading-[48px] mb-5" style={gradientStyle}>
+        Our Partners
+      </div>
+      <div className="h-[126px] w-[90%] md:w-[80%] border-[1px] border-[#FFFFFF47] rounded-[22px] flex flex-row justify-between px-2 md:px-16 items-center">
+        <div>
+          <Image src={universal} alt="img" height={95} width={96}/>
+        </div>
+        <div>
+          <Image src={smartpho} alt="img" height={69} width={281}/>
+        </div>
+        <div>
+          <Image src={fuga} alt="img" height={86} width={129}/>
+        </div>
+        <div>
+          <Image src={symphoni} alt="img" height={112} width={108}/>
+        </div>
+        <div>
+          <Image src={downtown} alt="img" height={63} width={160}/>
+        </div>
+        </div>
+      </div>
+      <Element name="benefits">
+        <Benifits/>
+      </Element>
+      <Element name="works">
+      <HowItWorks/>
+      </Element>
+      <Footer bg='#000000' logo={Logo}/>
+    </div>
   );
 }
