@@ -27,11 +27,11 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <Image src={financial} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] leading-[35px] align-center mt-1">
+              <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Financial freedom{" "}
               </h4>
               </center>
-              <p className="text-center px-2 text-[14px] leading-[28px] pt-3">
+              <p className="text-center px-2 text-[14px] pt-3" style={{lineHeight: '28px'}}>
                 Access a lump sum of cash to invest in yourself, your music, or
                 anything you need.
               </p>
@@ -45,11 +45,11 @@ export default function Benifits() {
                   </center>
               </div>
               <center>
-              <h4 className=" text-[33px] leading-[35px] align-center mt-1">
+              <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Creative control{" "}
               </h4>
               </center>
-              <p className="text-center px-2 text-[14px] leading-[28px] pt-3">
+              <p className="text-center px-2 text-[14px] pt-3" style={{lineHeight: '28px'}}>
                 Choose which songs to sell and the percentage you keep. You stay in charge
               </p>
             </div>
@@ -58,11 +58,11 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <Image src={transparency} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] leading-[35px] align-center mt-1">
+              <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Transparency{" "}
               </h4>
               </center>
-              <p className="text-center px-2 text-[14px] leading-[28px] pt-5">
+              <p className="text-center px-2 text-[14px] pt-5" style={{lineHeight: '28px'}}>
                 We use data-driven methods to craft fair offers, so you know exactly what your music is worth.
               </p>
             </div>
@@ -75,11 +75,11 @@ export default function Benifits() {
                   </center>
               </div>
               <center>
-              <h4 className=" text-[33px] leading-[35px] align-center mt-1">
+              <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Speed{" "}
               </h4>
               </center>
-              <p className="text-center px-2 text-[14px] leading-[28px] pt-3">
+              <p className="text-center px-2 text-[14px] pt-3" style={{lineHeight: '28px'}}>
                 Get paid quickly, no waiting months or years for streaming pennies.
               </p>
             </div>
@@ -88,11 +88,11 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <Image src={growth} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] leading-[35px] align-center mt-1">
+              <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Growth{" "}
               </h4>
               </center>
-              <p className="text-center px-2 text-[14px] leading-[28px] pt-3">
+              <p className="text-center px-2 text-[14px] pt-3" style={{lineHeight: '28px'}}>
                 We’ll also invest capital into your song, helping to increase streams across your entire catalog.
               </p>
             </div>

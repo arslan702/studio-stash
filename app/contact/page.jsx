@@ -4,20 +4,27 @@ import { useRouter } from "next/navigation";
 import HeaderLogo from "../../public/images/headerLogo.png";
 import BigLogo from "../../public/images/biglogo.png";
 import DarkLogo from "../../public/images/darkLogo.png";
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { CgMenuRightAlt } from "react-icons/cg";
 import Footer from "../components/footer";
 
 function Contact() {
   const router = useRouter();
+  const [nav, setNav] = useState(false);
+
+  const handleNavbar = () => {
+    setNav(!nav);
+  };
   return (
     <div>
     <div className={`bg-[#000000] h-auto relative pl:8 lg:pl-32 pb-20`}>
       <div className={`fixed top-0 left-0 right-0 bg-[#000000] z-[1]`}>
         <div className={`flex flex-row justify-between`}>
-          <div className="pt-6 pl-32">
+          <div className="pt-3 lg:pt-6 pl-2 md:pl-8 lg:pl-32">
             <Image src={HeaderLogo} alt="logo" height={84} width={207} />
           </div>
-          <div className="flex flex-row justify-between items-center pt-4 mr-32">
+          <div className="hidden md:flex flex-row justify-between items-center pt-4 mr-32">
             <div
               className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer"
               onClick={() => router.push("/")}
@@ -52,6 +59,73 @@ function Contact() {
             >
               <center>CONTACT</center>
             </div>
+          </div>
+          <div
+            onClick={handleNavbar}
+            className="block md:hidden sm:block items-center cursor-pointer z-50 pt-8 mr-10"
+          >
+            {nav ? (
+              <AiOutlineClose size={30} className="text-[#CEAD64] " />
+            ) : (
+              <CgMenuRightAlt size={30} className="text-[#CEAD64] " />
+            )}
+          </div>
+          <div
+            className={
+              nav
+                ? "lg:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-black text-center ease-linear duration-300 z-40"
+                : "lg:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center w-full h-screen bg-white text-black text-center ease-linear duration-300 z-400"
+            }
+          >
+            <ul className="flex flex-col gap-6">
+                <li
+                  className="menu-item"
+                  style={{
+                    fontWeight: "600",
+                    color: "#808285",
+                    fontFamily: "'Lato', sans-serif",
+                  }}
+                  onClick={() => router.push('/')}
+                >
+                  HOME
+                </li>
+                  <li
+                    className="menu-item cursor-pointer"
+                    style={{
+                      fontWeight: "600",
+                      color: "#808285",
+                      fontFamily: "'Lato', sans-serif",
+                    }}
+                    onClick={() => router.push('/')}
+                  >
+                    BENEFITS
+                  </li>
+                <li
+                  className="menu-item"
+                  style={{
+                    fontWeight: "600",
+                    color: "#808285",
+                    fontFamily: "'Lato', sans-serif",
+                  }}
+                  onClick={() => router.push('/')}
+                >
+                  CONTACT US
+                </li>
+                <li
+                  className="menu-item cursor-pointer"
+                  style={{
+                    fontWeight: "600",
+                    color: "#808285",
+                    fontFamily: "'Lato', sans-serif",
+                  }}
+                  onClick={() => router.push('/')}
+                >
+                    HOW IT WORK
+                </li>
+                <div className='h-[45px] w-[148px] rounded-[42px] text-[#000000] pt-[10px] cursor-pointer' onClick={() => router.push('/contact')} style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
+                  <center>CONTACT</center>
+                </div>
+            </ul>
           </div>
         </div>
       </div>
