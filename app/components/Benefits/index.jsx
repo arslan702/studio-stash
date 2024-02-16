@@ -28,7 +28,7 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={financial?.src} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
+              <h4 className=" text-[29px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
                 Financial freedom{" "}
               </h4>
               </center>
@@ -46,7 +46,7 @@ export default function Benifits() {
                   </center>
               </div>
               <center>
-              <h4 className=" text-[33px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
+              <h4 className=" text-[29px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
                 Creative control{" "}
               </h4>
               </center>
@@ -59,7 +59,7 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={transparency?.src} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
+              <h4 className=" text-[28px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
                 Transparency{" "}
               </h4>
               </center>
@@ -76,7 +76,7 @@ export default function Benifits() {
                   </center>
               </div>
               <center>
-              <h4 className=" text-[33px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
+              <h4 className=" text-[29px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
                 Speed{" "}
               </h4>
               </center>
@@ -89,7 +89,7 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={growth?.src} alt="" className=" " />
               <center>
-              <h4 className=" text-[33px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
+              <h4 className=" text-[29px] align-center mt-1 text-[#000000]" style={{lineHeight: '35px'}}>
                 Growth{" "}
               </h4>
               </center>
