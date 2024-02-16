@@ -127,7 +127,7 @@ export default function Home() {
           </div>
       </div>
       </div>
-      <div className="flex items-center justify-start pt-48 md:pt-64">
+      <div className="flex items-center justify-start pt-60 md:pt-64">
       <div className="flex flex-col">
         <div className="h-[3px] w-[196px]" style={{background: "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)"}}></div>
         <div className="homehead text-[44px] md:text-[75px] leading-[44px] md:leading-[74px] text-[#ffffff] mt-5">

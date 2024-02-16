@@ -76,7 +76,7 @@ function HowItWorks() {
         <div className="flex justify-center items-center mx-auto mt-8">
           <div className="bottom_bg relative w-[96%] md:w-[88%] h-[583px] md:h-[383px]">
             <div
-              className="absolute flex flex-col md:flex-row justify-between top-[-3px] md:top-[260px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
+              className="absolute flex flex-col md:flex-row justify-between items-center top-[-3px] md:top-[260px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
             >
                 <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
                     <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 1 ? notGradient : gradientPopin}>Step 1</div>
