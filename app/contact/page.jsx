@@ -140,7 +140,7 @@ function Contact() {
             width={385}
             height={308}
             alt="img"
-            className="flex ml-0 md:ml-8 lg:ml-34 absolute top-[220px] flipped-image"
+            className="flex ml-0 md:ml-8 lg:ml-34 absolute top-[170px] flipped-image"
           />
         </div>
 
