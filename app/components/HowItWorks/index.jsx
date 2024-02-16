@@ -74,7 +74,7 @@ function HowItWorks() {
           </div>
         </div>
         <div className="flex justify-center items-center mx-auto mt-8">
-          <div className="bottom_bg relative w-[96%] md:w-[88%] h-[583px] md:h-[383px]">
+          <div className="bottom_bg relative w-[96%] md:w-[88%] h-[670px] md:h-[383px]">
             <div
               className="absolute flex flex-col md:flex-row justify-between items-center top-[-3px] md:top-[260px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
             >
