@@ -24,7 +24,7 @@ export default function Benifits() {
 
         <div className="flex flex-row flex-wrap justify-center md:justify-between items-start gap-5  md:grid-cols-3 sm:grid-cols-2 grid:cols-1 m-14">
 
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={financial?.src} alt="" className=" " />
               <center>
@@ -38,7 +38,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <div className="h-[81px] w-[81px] rounded-[50%]" style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
                 <center className="mt-4">
@@ -55,7 +55,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={transparency?.src} alt="" className=" " />
               <center>
@@ -68,7 +68,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
             <div className="h-[81px] w-[81px] rounded-[50%]" style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
                 <center className="mt-4">
@@ -85,7 +85,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <img src={growth?.src} alt="" className=" " />
               <center>
