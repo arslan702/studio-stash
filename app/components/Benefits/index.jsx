@@ -11,6 +11,7 @@ const style = {
 }
 
 export default function Benifits() {
+  console.log({financial})
   return (
     <div>
       <div className=" md:max-w-full pb-10 bg-[#ffffff]">
@@ -25,7 +26,7 @@ export default function Benifits() {
 
           <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
             <div className="flex flex-col justify-center items-center pt-5 ">
-              <Image src={financial} alt="" className=" " />
+              <img src={financial?.src} alt="" className=" " />
               <center>
               <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Financial freedom{" "}
@@ -41,7 +42,7 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
               <div className="h-[81px] w-[81px] rounded-[50%]" style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
                 <center className="mt-4">
-                  <Image src={lightBulb} alt="img"/>
+                  <img src={lightBulb?.src} alt="img"/>
                   </center>
               </div>
               <center>
@@ -56,7 +57,7 @@ export default function Benifits() {
           </div>
           <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
             <div className="flex flex-col justify-center items-center pt-5 ">
-              <Image src={transparency} alt="" className=" " />
+              <img src={transparency?.src} alt="" className=" " />
               <center>
               <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Transparency{" "}
@@ -71,7 +72,7 @@ export default function Benifits() {
             <div className="flex flex-col justify-center items-center pt-5 ">
             <div className="h-[81px] w-[81px] rounded-[50%]" style={{background: 'linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)'}}>
                 <center className="mt-4">
-                  <Image src={speed} alt="img"/>
+                  <img src={speed?.src} alt="img"/>
                   </center>
               </div>
               <center>
@@ -86,7 +87,7 @@ export default function Benifits() {
           </div>
           <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px]">
             <div className="flex flex-col justify-center items-center pt-5 ">
-              <Image src={growth} alt="" className=" " />
+              <img src={growth?.src} alt="" className=" " />
               <center>
               <h4 className=" text-[33px] align-center mt-1" style={{lineHeight: '35px'}}>
                 Growth{" "}

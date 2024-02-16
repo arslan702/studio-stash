@@ -16,6 +16,7 @@ function Contact() {
   const handleNavbar = () => {
     setNav(!nav);
   };
+  
   return (
     <div>
     <div className={`bg-[#000000] h-auto relative pl:8 lg:pl-32 pb-20`}>
@@ -130,8 +131,8 @@ function Contact() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-around pt-32 md:pt-64">
-        <div className="flex flex-col w-[360px] md:w-[400px] lg:w-[512px] h-[550px] relative">
-          <div className="homehead text-[65px] lg:text-[96px] leading-[70px] lg:leading-[105px] text-[#ffffff] mt-16 z-1">
+        <div className="flex flex-col w-[360px] md:w-[400px] lg:w-[552px] h-[550px] relative">
+          <div className="homehead text-[50px] lg:text-[77px] leading-[60px] lg:leading-[85px] text-[#ffffff] mt-16 z-1">
             Unlock The Bag
           </div>
           <Image
@@ -139,7 +140,7 @@ function Contact() {
             width={385}
             height={308}
             alt="img"
-            className="flex ml-0 md:ml-8 lg:ml-52 absolute top-[220px]"
+            className="flex ml-0 md:ml-8 lg:ml-52 absolute top-[220px] flipped-image"
           />
         </div>
 

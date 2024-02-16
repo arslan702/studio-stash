@@ -55,6 +55,10 @@ body {
   font-family: "Sofia Pro";
 }
 
+.flipped-image {
+  transform: scaleX(-1);
+}
+
 .amsi {
   font-family: "Amsi Pro";
 }
