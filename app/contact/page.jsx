@@ -155,7 +155,7 @@ function Contact() {
                     <input className="w-[310px] md:w-[330px] lg:w-[441px] h-[50px] border-[1px solid #0000001F] rounded-[5px]" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 <div className="flex flex-row mt-6">
-                <div className="flex-col">
+                <div className="">
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>Email<span className="text-[#ab8124]">*</span></label>
                     <input className="w-[147px] md:w-[157px] lg:w-[213px] h-[50px] border-[1px solid #0000001F] rounded-[5px]" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>

@@ -22,7 +22,7 @@ export default function Benifits() {
           </div>
         </div>
 
-        <div className="flex flex-row flex-wrap justify-center md:justify-between items-start gap-5  md:grid-cols-3 sm:grid-cols-2 grid:cols-1 m-14">
+        <div className="flex flex-row flex-wrap justify-center md:justify-between items-start gap-3  md:grid-cols-3 sm:grid-cols-2 grid:cols-1 m-14">
 
           <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[301px] w-[232px] md:w-[16%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
