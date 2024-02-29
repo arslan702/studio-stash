@@ -17,7 +17,7 @@ function HowItWorks() {
 
   const gradientPopin = {
     background:
-      "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)",
+      "#ffffff",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     fontFamily: '"Poppins", sans-serif',
@@ -42,8 +42,7 @@ function HowItWorks() {
             <div className="flex flex-row justify-start items-center">
               <div className="h-[1px] w-[50px] bg-[#ffffff]"></div>
               <div
-                className="homehead text-[22px] leading-[22px]"
-                style={gradientStyle}
+                className="homehead text-[22px] leading-[22px] text-[#ffffff]"
               >
                 OUR MISSION
               </div>
@@ -67,7 +66,7 @@ function HowItWorks() {
         <div className="homehead text-center font-light text-[#ffffff] text-[46px] lg:text-[60px] py-5 ">
           How it Works
           <div className="flex justify-center">
-            <div className="w-[196px] h-[3px]" style={style}></div>
+            <div className="w-[196px] h-[3px] bg-[#ffffff]"></div>
           </div>
           <div className="text-[20px] leading-[30px] mt-5">
             Get started today by following our simple steps 
@@ -78,17 +77,17 @@ function HowItWorks() {
             <div
               className="absolute flex flex-col md:flex-row justify-between items-center top-[-3px] md:top-[260px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
             >
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "#ffffff" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
                     <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 1 ? notGradient : gradientPopin}>Step 1</div>
                     <div className="amsi text-[24px] leading-[29px] mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFFF0", fontWeight: '400'}}>Connect With Our Friendly Team</div>
                     <div className="homehead text-[16px] leading-[32px] mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Schedule a  call to discuss your music and goals.</div>
                 </div>
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(2)} style={{background : active == 2 ? "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(2)} style={{background : active == 2 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
                     <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 2 ? notGradient : gradientPopin}>Step 2</div>
                     <div className="amsi text-[24px] leading-[29px] mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFFF0",fontWeight: '400'}}>Get a personalized offer</div>
                     <div className="homehead text-[16px] leading-[32px] mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>We analyze your data and present a transparent proposal based on your music's true value.</div>
                 </div>
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(3)} style={{background : active == 3 ? "linear-gradient(88.77deg, #CEAD64 2.99%, #ECE1A9 48.88%, #AF8C3D 99.08%)" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(3)} style={{background : active == 3 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
                     <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 3 ? notGradient : gradientPopin}>Step 3</div>
                     <div className="amsi text-[24px] leading-[29px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFFF0",fontWeight: '400'}}>Sign the deal on your terms</div>
                     <div className="homehead text-[16px] leading-[32px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Choose which tracks and percentages you want to sell. We handle the rest, and you get paid fast.</div>
