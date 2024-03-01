@@ -77,20 +77,20 @@ function HowItWorks() {
             <div
               className="absolute flex flex-col md:flex-row justify-between items-center top-[-3px] md:top-[380px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
             >
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "#ffffff" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 1 ? notGradient : gradientPopin}>Step 1</div>
-                    <div className="amsi text-[24px] leading-[29px] mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFFF0", fontWeight: '400'}}>Connect With Our Friendly Team</div>
-                    <div className="homehead text-[16px] leading-[32px] mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Schedule a  call to discuss your music and goals.</div>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "#ffffff" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 1 ? notGradient : gradientPopin}>Step 1</div>
+                    <div className="amsi w-[100%] md:w-[266px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFFF0", fontWeight: '600'}}>Connect With Our Friendly Team</div>
+                    <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Schedule a  call to discuss your music and goals.</div>
                 </div>
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(2)} style={{background : active == 2 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 2 ? notGradient : gradientPopin}>Step 2</div>
-                    <div className="amsi text-[24px] leading-[29px] mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFFF0",fontWeight: '400'}}>Get a personalized offer</div>
-                    <div className="homehead text-[16px] leading-[32px] mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>We analyze your data and present a transparent proposal based on your music's true value.</div>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(2)} style={{background : active == 2 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 2 ? notGradient : gradientPopin}>Step 2</div>
+                    <div className="amsi w-[100%] md:w-[231px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFFF0",fontWeight: '600'}}>Get a personalized offer</div>
+                    <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>We analyze your data and present a transparent proposal based on your music's true value.</div>
                 </div>
-                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-3 rounded-[10px]" onClick={() => setActive(3)} style={{background : active == 3 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-5 md:pt-10" style={active == 3 ? notGradient : gradientPopin}>Step 3</div>
-                    <div className="amsi text-[24px] leading-[29px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFFF0",fontWeight: '400'}}>Sign the deal on your terms</div>
-                    <div className="homehead text-[16px] leading-[32px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Choose which tracks and percentages you want to sell. We handle the rest, and you get paid fast.</div>
+                <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(3)} style={{background : active == 3 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 3 ? notGradient : gradientPopin}>Step 3</div>
+                    <div className="amsi w-[100%] md:w-[260px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFFF0",fontWeight: '600'}}>Sign the deal on your terms</div>
+                    <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Choose which tracks and percentages you want to sell. We handle the rest, and you get paid fast.</div>
                 </div>
             </div>
           </div>

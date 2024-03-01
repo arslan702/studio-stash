@@ -18,10 +18,10 @@
   src: url("../public/amsi-pro/AmsiPro-Regular.otf");
 }
 
-.outfit {
+.outfit-text {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
