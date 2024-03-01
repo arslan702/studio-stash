@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
@@ -12,9 +12,9 @@ function Footer({bg, logo, btnbg}) {
               <div>Studio</div>
               <div>Stash</div>
             </div>
-            <div onClick={() => router.push('/contact')} className={`h-[45px] w-[148px] rounded-[42px] text-[${bg}] pt-[10px] cursor-pointer bg-[${btnbg}]`}>
+            <button onClick={() => router.push('/contact')} className={`h-[45px] w-[148px] rounded-[42px] text-[${bg}] cursor-pointer bg-[${btnbg}]`}>
                 <center>Contact</center>
-            </div>
+            </button>
         </div>
         <div className={`w-full flex justify-center items-center h-[49px] bg-[${btnbg}] text-[${bg}] text-[16px] leading-[16px] font-[600]`}>
             ©2024 StudioStash

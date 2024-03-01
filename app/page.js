@@ -49,9 +49,9 @@ export default function Home() {
           <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer">HOME</div>
           <div className="homehead text-[16px] leading-[16px] text-[#ffffff] mx-5 cursor-pointer"><Link to="benefits" smooth={true} duration={500}>BENEFITS</Link></div>
           <div className="homehead text-[16px] leading-[16px] text-[#ffffff] ml-5 cursor-pointer mr-[150px] lg:mr-[300px]"><Link to="works">HOW IT WORK</Link></div>
-          <div className='h-[45px] w-[148px] rounded-[42px] text-[#000000] bg-[#ffffff] pt-[10px] cursor-pointer ml-5' onClick={() => router.push('/contact')} >
+          <button className='h-[45px] w-[148px] rounded-[42px] text-[#000000] bg-[#ffffff] cursor-pointer ml-5' onClick={() => router.push('/contact')} >
             <center>CONTACT</center>
-          </div>
+          </button>
         </div>
         <div
             onClick={handleNavbar}
@@ -101,9 +101,9 @@ export default function Home() {
                 >
                   <Link to="works" smooth={true} duration={500} onClick={() => setNav(false)}>HOW IT WORK</Link>
                 </li>
-                <div className='h-[45px] w-[148px] rounded-[42px] text-[#ffffff] bg-[#000000] pt-[10px] cursor-pointer' onClick={() => router.push('/contact')}>
+                <button className='h-[45px] w-[148px] rounded-[42px] text-[#ffffff] bg-[#000000] cursor-pointer' onClick={() => router.push('/contact')}>
                   <center>CONTACT</center>
-                </div>
+                </button>
             </ul>
           </div>
       </div>
