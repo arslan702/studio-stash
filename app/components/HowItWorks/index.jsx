@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import singer from "../../../public/images/singer.png";
+import kobens from "../../../public/images/Kobenz.png";
 
 function HowItWorks() {
   const [active, setActive] = useState(3);
@@ -78,17 +79,17 @@ function HowItWorks() {
               className="absolute flex flex-col md:flex-row justify-between items-center top-[-3px] md:top-[380px] bottom-14 left-0 right-0 h-16" /* Adjust background and height styles accordingly */
             >
                 <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(1)} style={{background : active == 1 ? "#ffffff" : "#191919",boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 1 ? notGradient : gradientPopin}>Step 1</div>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10 font-[600]" style={{color: active == 1 ? '#000000' : '#ffffff'}}>Step 1</div>
                     <div className="amsi w-[100%] md:w-[266px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFFF0", fontWeight: '600'}}>Connect With Our Friendly Team</div>
                     <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 1 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Schedule a  call to discuss your music and goals.</div>
                 </div>
                 <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(2)} style={{background : active == 2 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 2 ? notGradient : gradientPopin}>Step 2</div>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10 font-[600]" style={{color: active == 2 ? '#000000' : '#ffffff'}}>Step 2</div>
                     <div className="amsi w-[100%] md:w-[231px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFFF0",fontWeight: '600'}}>Get a personalized offer</div>
                     <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 2 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>We analyze your data and present a transparent proposal based on your music's true value.</div>
                 </div>
                 <div className="h-[294px] w-[360px] md:w-[300px] lg:w-[383px] mt-4 px-7 rounded-[10px]" onClick={() => setActive(3)} style={{background : active == 3 ? "#ffffff" : "#191919", boxShadow: '0px 3.7253634929656982px 23.283527374267578px 0px #0000000D'}}>
-                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10" style={active == 3 ? notGradient : gradientPopin}>Step 3</div>
+                    <div className="text-[40px] leading-[41px] pt-3 md:pt-10 font-[600]" style={{color: active == 3 ? '#000000' : '#ffffff'}}>Step 3</div>
                     <div className="amsi w-[100%] md:w-[260px] text-[24px] leading-[29px] mt-1 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFFF0",fontWeight: '600'}}>Sign the deal on your terms</div>
                     <div className="outfit-text text-[16px] leading-[28px] md:leading-[32px] mt-3 md:mt-5" style={{color: active == 3 ? "#000000" : "#FFFFFF",fontFamily: 'Outfit'}}>Choose which tracks and percentages you want to sell. We handle the rest, and you get paid fast.</div>
                 </div>
@@ -97,13 +98,13 @@ function HowItWorks() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center w-full h-auto py-8 md:py-2 md:h-[536px] bg-[#ffffff]">
-        <div className="w-[90%] md:w-[35%]">
+        <div className="w-[90%] md:w-[30%]">
             <div className="text-[32px] leading-[61px] text-[#3d3939]" style={{fontWeight: '700'}}>CASE STUDY</div>
-            <div className="text-[16px] leading-[32px] text-[#696969]" style={{fontWeight: '400'}}>
-                StudioStash gave me cash upfront for my song, made sure I maintained a percentage of my streaming royalties and my masters are still mine. Not to mention, I saw a 5x increase in monthly streams across my entire catalog after they reinvested into my song. I think it’s a dope option for artists.
+            <div className="outfit-text text-[16px] leading-[32px] text-[#696969]" style={{fontWeight: '400'}}>
+            StudioStash gave me cash upfront for my song, made sure I maintained a percentage of my streaming royalties and my masters are still mine. Not to mention, I saw a 5x increase in monthly streams across my entire catalog after they reinvested into my song. I think it’s a dope option for artists. (Use photo of musician)
             </div>
-            <div className="text-[32px] leading-[61px] text-[#696969]">
-                Kobenz
+            <div className="text-[32px] leading-[61px] text-[#696969] mt-5">
+                <Image src={kobens} alt="img"/>
             </div>
         </div>
         <div className="w-[90%] md:w-[35%] flex justify-end items-end">
