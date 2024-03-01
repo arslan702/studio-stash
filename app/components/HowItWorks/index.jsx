@@ -101,7 +101,7 @@ function HowItWorks() {
         <div className="w-[90%] md:w-[30%]">
             <div className="text-[32px] leading-[61px] text-[#3d3939]" style={{fontWeight: '700'}}>CASE STUDY</div>
             <div className="outfit-text text-[16px] leading-[32px] text-[#696969]" style={{fontWeight: '400'}}>
-            StudioStash gave me cash upfront for my song, made sure I maintained a percentage of my streaming royalties and my masters are still mine. Not to mention, I saw a 5x increase in monthly streams across my entire catalog after they reinvested into my song. I think it’s a dope option for artists. (Use photo of musician)
+            StudioStash gave me cash upfront for my song, made sure I maintained a percentage of my streaming royalties and my masters are still mine. Not to mention, I saw a 5x increase in monthly streams across my entire catalog after they reinvested into my song. I think it’s a dope option for artists.
             </div>
             <div className="text-[32px] leading-[61px] text-[#696969] mt-5">
                 <Image src={kobens} alt="img"/>
