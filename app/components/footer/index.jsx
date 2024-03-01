@@ -12,8 +12,8 @@ function Footer({bg, logo, btnbg}) {
                 <center>Contact</center>
             </div>
         </div>
-        <div className='w-full flex justify-center items-center h-[49px] bg-[#ffffff]'>
-            ©2024 StudioStash from YingYang & Co.
+        <div className='w-full flex justify-center items-center h-[49px] bg-[#ffffff] text-[16px] leading-[16px] font-[600]'>
+            ©2024 StudioStash
         </div>
     </div>
   )
