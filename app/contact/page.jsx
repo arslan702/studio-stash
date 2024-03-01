@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import HeaderLogo from "../../public/images/header.png";
-import BigLogo from "../../public/images/biglogo.png";
+// import BigLogo from "../../public/images/biglogo.png";
 import DarkLogo from "../../public/images/darkLogo.png";
 import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
