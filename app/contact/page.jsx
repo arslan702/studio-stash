@@ -127,25 +127,25 @@ function Contact() {
               <div className="w-full">
                 <div>
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>Name<span className="text-[#777777]">*</span></label>
-                    <input className="w-[310px] md:w-[330px] lg:w-[441px] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
+                    <input className="w-[310px] md:w-[330px] lg:w-[441px] text-[#777777] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 <div className="mt-6">
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>Artist Spotify URL<span className="text-[#777777]">*</span></label>
-                    <input className="w-[310px] md:w-[330px] lg:w-[441px] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
+                    <input className="w-[310px] md:w-[330px] lg:w-[441px] text-[#777777] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 <div className="flex flex-row mt-6">
                 <div className="">
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>Email<span className="text-[#777777]">*</span></label>
-                    <input className="w-[147px] md:w-[157px] lg:w-[213px] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
+                    <input className="w-[147px] md:w-[157px] lg:w-[213px] text-[#777777] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 <div className="ml-4">
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>Phone Number</label>
-                    <input className="w-[147px] md:w-[157px] lg:w-[213px] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
+                    <input className="w-[147px] md:w-[157px] lg:w-[213px] text-[#777777] h-[50px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 </div>
                 <div className="mt-6">
                     <label className="text-[16px] leading-[16px] text-[#777777]" style={{fontWeight: '500'}}>What can we help you with?</label>
-                    <input className="w-[310px] md:w-[330px] lg:w-[441px] h-[87px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
+                    <input className="w-[310px] md:w-[330px] lg:w-[441px] text-[#777777] h-[87px] border-[1px solid #0000001F] rounded-[5px] px-4" style={{background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),linear-gradient(0deg, rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2))'}}/>
                 </div>
                 <button className="w-full h-[50px] rounded-[6px] mt-6 bg-[#ffffff] font-[500]">
                 <center className="text-[#000000]">Submit</center>
