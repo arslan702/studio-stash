@@ -24,7 +24,7 @@ export default function Benifits() {
 
         <div className="flex flex-row flex-wrap justify-center md:justify-between items-start gap-3  md:grid-cols-3 sm:grid-cols-2 grid:cols-1 m-14">
 
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[232px] md:w-[22%]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[292px] md:w-[22%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               {/* <img src={financial?.src} alt="" className=" " /> */}
               <div className="h-[81px] w-[81px] rounded-[50%] bg-[#D9D9D94A]">
@@ -43,7 +43,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[232px] md:w-[22%]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[292px] md:w-[22%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <div className="h-[81px] w-[81px] rounded-[50%] bg-[#D9D9D94A]">
                 <center className="mt-4">
@@ -60,7 +60,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[232px] md:w-[22%]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[292px] md:w-[22%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
               <div className="h-[81px] w-[81px] rounded-[50%] bg-[#D9D9D94A]">
                 <center className="mt-4">
@@ -77,7 +77,7 @@ export default function Benifits() {
               </p>
             </div>
           </div>
-          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[232px] md:w-[22%]">
+          <div className="homehead border-[1px] border-[#CEAD64] rounded-[25px] h-[332px] w-[292px] md:w-[22%]">
             <div className="flex flex-col justify-center items-center pt-5 ">
             <div className="h-[81px] w-[81px] rounded-[50%] bg-[#D9D9D94A]">
                 <center className="mt-4">
